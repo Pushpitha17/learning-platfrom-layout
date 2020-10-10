@@ -8,7 +8,6 @@ import {
 	Classes,
 	H2,
 	Divider,
-	Collapse,
 } from "@blueprintjs/core";
 import OverlayItem from "./OverlayItem";
 import MainContent from "./MainContent";

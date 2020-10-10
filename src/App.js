@@ -1,15 +1,7 @@
 import React from "react";
 import "./App.css";
 import Content from "./Components/Content";
-import {
-	Navbar,
-	Button,
-	Alignment,
-	Card,
-	Elevation,
-	H1,
-	H2,
-} from "@blueprintjs/core";
+import { Navbar, Button, Alignment, H1 } from "@blueprintjs/core";
 import logo from "./images/testlogo.png";
 
 function App() {
@@ -17,7 +9,7 @@ function App() {
 		<div className="App">
 			<Navbar className="nav-grid" fixedToTop="true">
 				<Navbar.Group>
-					<img src={logo} style={{ height: "90%" }}></img>
+					<img src={logo} alt="logo" style={{ height: "90%" }}></img>
 				</Navbar.Group>
 				<div>
 					<H1 className="nav-heading">Module Name</H1>
