@@ -1,38 +1,98 @@
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-heading {
+	text-align: center;
+	font-weight: 300;
+	font-size: 28px !important;
+	height: 100%;
+	margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-grid {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 300px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.side-bar {
+	position: fixed;
+	top: 50px;
+	height: calc(100vh - 50px);
+	width: 300px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation-card-previous {
+	display: flex;
+}
+.navigation-card-next {
+	display: flex;
+	justify-content: flex-end;
+}
+.navigation-card-content {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+.navigation-heading {
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.navigation-card-icon-left {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+.navigation-card-icon-right {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+.navigation-card-icon-content {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.overlay {
+	width: 70%;
+	top: 5%;
+	left: 15%;
+	height: auto;
+}
+
+.close-overlay {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.collapse-item {
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	background-color: whitesmoke;
+}
+
+.collapse-container {
+	padding: 15px 20px 10px;
+	background-color: white;
+	border: 1px gray solid;
+	border-top: none;
+}
+
+.content-card {
+	margin-bottom: 50px;
 }
